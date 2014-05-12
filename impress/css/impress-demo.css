@@ -254,6 +254,9 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
+.slidetitle {
+	font-size: 50px;
+}
 
 #title {
     padding: 0;
