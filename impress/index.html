@@ -94,6 +94,15 @@
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	
+	<script type="text/javascript">
+		function show(eid, sid, bid){
+			document.getElementById(sid).parentNode.replaceChild(document.getElementById(eid), document.getElementById(sid));
+			//document.getElementById(id2).style.visibility="hidden";
+			document.getElementById(bid).style.visibility="hidden";
+			document.getElementById(eid).style.visibility="visible";		
+		};
+	</script>
 </head>
 
 <!--
@@ -146,7 +155,6 @@
     
 -->
 <div id="impress">
-	<div id="teil1"></div>
     <!--
         
         Here is where interesting thing start to happen.
@@ -195,8 +203,38 @@
     </div>
 	<div class="step slide" data-x="0" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Entwickeln mit Bootstrap</h1><br/>
+		<button id='b1' class="show" onclick="show('e1', 's1', 'b1')">Zeige das Ergebnis!</button>
+		<!-- <pre class="code" id="s1"><code> -->
+		<pre id="s1" name="code" class="html">
+ &lt;!DOCTYPE html&gt;
+   &lt;html lang=&quot;en&quot;&gt;
+     &lt;head&gt;
+       &lt;meta charset=&quot;utf-8&quot;&gt;
+       &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+       &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, 
+	   initial-scale=1&quot;&gt;
+       &lt;title&gt;Bootstrap&lt;/title&gt;
+       &lt;link href=&quot;../bootstrap-3.1.1/css/bootstrap.min.css&quot; 
+	   rel=&quot;stylesheet&quot;&gt;
+       &lt;!--[if lt IE 9]&gt;
+       &lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+	   html5shiv.js&quot;&gt;&lt;/script&gt;
+       &lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.4.2/
+	   respond.min.js&quot;&gt;&lt;/script&gt;				
+     &lt;/head&gt;
+     &lt;body&gt;
+       &lt;h1&gt;Hello, world!&lt;/h1&gt;
+       &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/
+	   1.11.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+       &lt;script src=&quot;../bootstrap-3.1.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+     &lt;/body&gt;
+   &lt;/html&gt;
+   </pre>
+		<!--</code></pre>-->
+		<embed id="e1" class="embed" src="../examples/test.html">
+		</embed>
     </div>
-	
+
 	<!-- Die Mauer :-( -->
 
     <div class="step slide" data-x="-5000" data-y="-1500" data-rotate="90">
@@ -377,8 +415,18 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
+
+
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
+<link type="text/css" rel="stylesheet" href="../syntax/css/SyntaxHighlighter.css"></link>
+	<script language="javascript" src="../syntax/js/shCore.js"></script>
+	<script language="javascript" src="../syntax/js/shBrushCSharp.js"></script>
+	<script language="javascript" src="../syntax/js/shBrushXml.js"></script>
+<script language="javascript">
+	dp.SyntaxHighlighter.ClipboardSwf = '/flash/clipboard.swf';
+	dp.SyntaxHighlighter.HighlightAll('code');
+</script>
 
 <!--
     
