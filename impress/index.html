@@ -225,7 +225,7 @@
 	<div class="step slide multi" data-x="-1000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Hello World</h1><br/>
 		<!--<button id='b1' class="show" onclick="show('e1', 's1', 'b1')">Zeige das Ergebnis!</button>-->
-		<textarea id="s1" name="code" class="html" cols="60" rows="10">
+		<textarea name="code" class="html">
 			<!DOCTYPE html>
 			<html lang="en">
 			  <head>
@@ -354,12 +354,12 @@
 		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
-				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger</button>
+				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger  <span class="caret"></span></button>
 				<ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
 					<li role="presentation" class="dropdown-header">Dropdown header 1</li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+					<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Something else</a></li>
 					<li role="presentation" class="divider"></li>
 					<li role="presentation" class="dropdown-header">Dropdown header 2</li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
@@ -372,12 +372,12 @@
 		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
-				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger</button>
+				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger  <span class="caret"></span></button>
 				<ul class="dropdown-menu" role="menu"  aria-labelledby="dLabel">
 					<li role="presentation" class="dropdown-header">Dropdown header 1</li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-					<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+					<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Something else</a></li>
 					<li role="presentation" class="divider"></li>
 					<li role="presentation" class="dropdown-header">Dropdown header 2</li>
 					<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
@@ -387,14 +387,32 @@
 		<embed src="../examples/5.html" height="270px"></embed>
 	</div>
 	
-
+	
+	<!----- 
+	
+	Beispiel 4: Input-Groups
+	
+	
+	
+	-->
+	<div class="step slide multi" data-x="-5000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Eingabegruppen</h1><br/>
+		<p>Erstellen einer Eingabegruppe</p>
+		<textarea name="code" class="html" cols="60" rows="10">
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon">@</span>
+			  <input type="text" class="form-control" placeholder="E-Mail">
+			</div>
+		</textarea>
+		<embed src="../examples/6.html" height="270px"></embed>
+	</div>
 	<!-- Die Mauer :-( -->
 
-    <div class="step slide" data-x="-5000" data-y="-1500" data-rotate="90">
+    <div class="step slide" data-x="-10000" data-y="-1500" data-rotate="90">
         <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
     </div>
 	
-	 <div class="step slide" data-x="-6000" data-y="-1500" data-rotate="90">
+	 <div class="step slide" data-x="-11000" data-y="-1500" data-rotate="90">
         <q>Test Slide. Gibt es schon wieder Konflikte. Oder funktionert es jetzt ?????</q>
     </div>
 	
@@ -578,7 +596,7 @@ if ("ontouchstart" in document.documentElement) {
 	<script language="javascript" src="../syntax/js/shBrushXml.js"></script>
 <script language="javascript">
 	dp.SyntaxHighlighter.ClipboardSwf = '/flash/clipboard.swf';
-	dp.SyntaxHighlighter.HighlightAll('code');
+	dp.SyntaxHighlighter.HighlightAll('code', false, false);
 </script>
 
 <!--
