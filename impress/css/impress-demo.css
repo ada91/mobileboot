@@ -65,6 +65,14 @@ ul{
     list-style: disc;
 }
 
+li{
+	padding: 3px 12px 3px 8px
+}
+
+li li{
+    padding: 3px 3px 3px 17px;
+}
+
 blockquote, q {
     quotes: none;
 }
