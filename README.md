@@ -69,12 +69,17 @@ Um entsprechend auf die Bildschirmbreite der Geräte reagieren zu können werden s
 Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an unterschiedlichen Stellen geschehen:
 
 * Einbinden unterschiedlicher Styledateien für unterschiedliche Medientypen: 
+
 	"<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
-* Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp. 
+	
+* Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp: 
+
 	"<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
-* Alle CSS-Regeln werden in einem Stylesheet untergebracht.
+	
+* Alle CSS-Regeln werden in einem Stylesheet untergebracht:
+	
 	"/* CSS-Regeln für alle Ausgabegeräte */
 	@media print {
 	/* zusätzliche CSS-Regeln für Drucker */"(selfhtml: CSS/Media Queries, 2014)
