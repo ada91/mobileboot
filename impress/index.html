@@ -488,6 +488,10 @@
 	
 	<!-- Die Mauer :-( -->
 	
+	<!-- Facts -->
+	<!--
+	
+	-->
 	<div class="step" data-x="-8000" data-y="-1500" data-scale="10" data-rotate="45">
 		<p><b>Einf&uumlhrung</b></p>
     </div>
@@ -504,7 +508,10 @@
 		</ul><br/>
 		
 	</div>
-
+<!-- Geschichte 1 -->
+	<!--
+	
+	-->
 	<div class="step slide multi" data-x="-10000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Einleitung</h1><br/>
 		<h1 class="title2">Geschichte</h1></br>
@@ -518,12 +525,14 @@
 						<li>Implementierung
 						<li>Abstraktion und Dokumentation"<sup>1</sup>
 					</ul>
-			<li>Bootstrap als lebendiger Styleguide.
-			<li>Ver&oumlffentlichung auf GitHub.
+			</ul><br/>
 			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
-		</ul><br/>
-		</div>
 		
+		</div>
+<!-- Geschichte 2 -->
+	<!--
+	
+	-->
 	<div class="step slide multi" data-x="-10000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Einleitung</h1><br/>
 		<h1 class="title2">Geschichte</h1></br>
@@ -533,16 +542,94 @@
 			<li>Seit Version 2 Erg&aumlnzungen f&uumlr Mobilger&aumlte. Ab Version 3 fester Bestandteil.
 		</ul>
 	</div>
+
+<!-- Responsive Webdesign -->
+	<!--
 	
+	-->
 	<div class="step slide multi" data-x="-11000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Einleitung</h1><br/>
-		<h1 class="title2">Geschichte</h1></br>
+		<h1 class="slidetitle">Responsive Webdesign</h1><br/>
 		<ul>
-			<li>Bootstrap als lebendiger Styleguide.
-			<li>Ver&oumlffentlichung auf GitHub.
-			<li>Seit Version 2 Erg&aumlnzungen f&uumlr Mobilger&aumlte. Ab Version 3 fester Bestandteil.
+			<li>Responsive Webdesign <b>vs.</b> Mobile Version. </br>
+			<p style="font-size:21px">&#8594 Eine sich via Media Queries anpassende Seite <b>vs.</b> Umleitung aufgrund des User-Agent auf Mobile-Seite.</p></br>
+			<li><p>Passt sich dem zur Verf&uumlgung stehendem Raum (Breite) auf dem betrachteten Ger&aumlt an. </p></br>
+			<li>Hierzu werden Media Queries angewendet: 
+				<ul style="list-style: circle">
+						<li>Dient zum Aufruf dedizierter CSS-Stylesheets je nach Medium und Medienmerkmal.
+						<li>Medientypen: <b>screen, print,</b> ...uvm.
+						<li>Medienmerkmale: <b>width, height, device-height, device width, orientation,</b> ... uvm.
+				</ul>
 		</ul>
 	</div>
+	
+		<div class="step slide multi" data-x="-12000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Media Queries</h1><br/>
+		Unterschiedliche Arten der Media Querie Einbindung:
+		<ul>
+			<li> F&uumlr jeden "Fall" unterschiedliche Styledateien:<sup>1</sup> 
+			<textarea name="code" class="html" cols="60" rows="10">
+			<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
+			<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
+			</textarea>
+			<li> Allgemeine und ergänzende Styledatei:<sup>1</sup>
+			<textarea name="code" class="html" cols="60" rows="10">
+			<link rel="stylesheet" href="stylesheet.css">
+			<link rel="stylesheet" href="druck-stylesheet.css" media="print">
+			</textarea>
+			<li> Media Queries im Stylesheet: 
+			<textarea name="code" class="css" cols="60" rows="10">
+			/* CSS-Regeln für alle Ausgabegeräte */
+			@media only screen and (min-width: 775px) and (max-width: 1000px) {
+			/* CSS Regeln für die Ausgabe auf Bildschirmen welche eine Größe zwischen 775 
+			und 1000 Pixeln aufweisen. */}
+			</textarea>
+			&#8594 Bei Bootstrap:
+			<textarea name="code" class="css" cols="60" rows="10">
+			@media (min-width: @screen-sm-min) { ... }
+			</textarea>
+		</ul>
+		
+		<span class="footnote"><sup>1</sup>selfhtml: CSS/Media Queries, 2014</span>
+	</div>
+	
+		<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
+		<ul>
+			<li>Wichtig für die korrekte Darstellung auf mobilen Engeräten. 
+			<li>Gibt dem Browser an, in welcher Breite die Seite am besten gerendert werden sollte. 
+			<li>Default Wert der meisten mobilen Browser sind 980px.
+		</ul>
+		<textarea name="code" class="html" cols="60" rows="10">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		</textarea>
+	</div>
+	
+	<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
+		<p>Pixelangaben und device width auf mobilen Endgeräten.</p> </br>
+		<div align="center"><img src="img/Viewport.JPG" height="515px"></div>
+		</div>
+		
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<ul>
+			<li>Zeilen und Splaten über welche das Layout für den Inhalt entsteht.
+			<li>Erzeugen einer Zeile:
+			<textarea name="code" class="html" cols="60" rows="10">
+			<div class="row"> <\div> 
+			</textarea>
+			<li>Ausgestaltung der "12" Spalten in der Zeile:
+			<textarea name="code" class="html" cols="60" rows="10">
+					<div class="row"> 
+					<div class="col-md-5">Dieses Feld ist 5/12 breit.</div>
+					<div class="col-md-7">Dieses Feld ist 7/12 breit.</div>
+					<\div> 
+			</textarea>
+		</ul>
+	</div>
+	
+	
+		
 	
     <div class="step slide" data-x="-100000" data-y="-1500" data-rotate="90">
         <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
@@ -730,6 +817,7 @@ if ("ontouchstart" in document.documentElement) {
 	<script language="javascript" src="../syntax/js/shCore.js"></script>
 	<script language="javascript" src="../syntax/js/shBrushCSharp.js"></script>
 	<script language="javascript" src="../syntax/js/shBrushXml.js"></script>
+	<script language="javascript" src="../syntax/js/shBrushCss.js"></script>
 <script language="javascript">
 	dp.SyntaxHighlighter.ClipboardSwf = '/flash/clipboard.swf';
 	dp.SyntaxHighlighter.HighlightAll('code', false, false);
