@@ -571,16 +571,16 @@
 			<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
 			<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
 			</textarea>
-			<li> Allgemeine und ergänzende Styledatei:<sup>1</sup>
+			<li> Allgemeine und erg&aumlnzende Styledatei:<sup>1</sup>
 			<textarea name="code" class="html" cols="60" rows="10">
 			<link rel="stylesheet" href="stylesheet.css">
 			<link rel="stylesheet" href="druck-stylesheet.css" media="print">
 			</textarea>
 			<li> Media Queries im Stylesheet: 
 			<textarea name="code" class="css" cols="60" rows="10">
-			/* CSS-Regeln für alle Ausgabegeräte */
+			/* CSS-Regeln f&uumlr alle Ausgabeger&aumlte */
 			@media only screen and (min-width: 775px) and (max-width: 1000px) {
-			/* CSS Regeln für die Ausgabe auf Bildschirmen welche eine Größe zwischen 775 
+			/* CSS Regeln f&uumlr die Ausgabe auf Bildschirmen welche eine Gr&oumlße zwischen 775 
 			und 1000 Pixeln aufweisen. */}
 			</textarea>
 			&#8594 Bei Bootstrap:
@@ -595,7 +595,7 @@
 		<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
 		<ul>
-			<li>Wichtig für die korrekte Darstellung auf mobilen Engeräten. 
+			<li>Wichtig f&uumlr die korrekte Darstellung auf mobilen Enger&aumlten. 
 			<li>Gibt dem Browser an, in welcher Breite die Seite am besten gerendert werden sollte. 
 			<li>Default Wert der meisten mobilen Browser sind 980px.
 		</ul>
@@ -606,14 +606,14 @@
 	
 	<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
-		<p>Pixelangaben und device width auf mobilen Endgeräten.</p> </br>
+		<p>Pixelangaben und device width auf mobilen Endger&aumlten.</p> </br>
 		<div align="center"><img src="img/Viewport.JPG" height="515px"></div>
 		</div>
 		
 	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
 		<ul>
-			<li>Zeilen und Splaten über welche das Layout für den Inhalt entsteht.
+			<li><p>Zeilen und Splaten &uumlber welche das Layout f&uumlr den Inhalt entsteht.</p></br>
 			<li>Erzeugen einer Zeile:
 			<textarea name="code" class="html" cols="60" rows="10">
 			<div class="row"> <\div> 
@@ -621,13 +621,71 @@
 			<li>Ausgestaltung der "12" Spalten in der Zeile:
 			<textarea name="code" class="html" cols="60" rows="10">
 					<div class="row"> 
-					<div class="col-md-5">Dieses Feld ist 5/12 breit.</div>
-					<div class="col-md-7">Dieses Feld ist 7/12 breit.</div>
+					<div class="col-sm-5">Dieses Feld ist 5/12 breit. Bei <768px Spalten vertikal angeordnet.</div>
+					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
 					<\div> 
 			</textarea>
 		</ul>
 	</div>
 	
+		<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bootstrap Default Ger&aumlteklassen:</p></br>
+		<embed src="../grid_examples/table.html" width="770px" height="500px"></embed>
+		<span class="footnote">Quelle: bootstrap: CSS, 2014</span>
+		
+	</div>
+	
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<textarea name="code" class="html" cols="60" rows="10">
+					<div class="row"> 
+					<div class="col-sm-5">Dieses Feld ist 5/12 breit.</div>
+					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
+					</div> 
+		</textarea></br>
+		Bei 800px:
+		<embed src="../grid_examples/grid_example1.html" width="800px" height="65 px"></embed>
+		
+		Bei 767px:
+		<embed src="../grid_examples/grid_example1.html" width="767px" height="130px"></embed>
+		
+	</div>
+	
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<textarea name="code" class="html" cols="60" rows="10">
+			<div class="row"> 
+				<div class="col-xs-6 col-sm-5 col-md-4">.col-xs-6 .col-sm-5 .col-md-4</div>
+				<div class="col-xs-6 col-sm-5 col-md-5">.col-xs-6 .col-sm-5 .col-md-5</div>
+				<div class="col-sm-2 col-md-2">.col-sm-2 .col-md-2</div>
+				<div class="col-md-1">.col-md-1</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-6 col-sm-9 col-md-2">.col-sm-8 .col-md-5</div>
+				<div class="col-xs-6 col-sm-3 col-md-10">.col-sm-4 .col-md-7</div>
+			</div>
+		</textarea>
+	</div>
+	
+	
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 320px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="320px" height="300px"></embed>
+	</div>
+	
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 768px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="768px" height="200px"></embed>
+	</div>
+	
+	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 992px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="992px" height="200px"></embed>
+	</div>
 	
 		
 	
