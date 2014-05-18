@@ -14,6 +14,7 @@ Agenda
 	</ol>
 <li> Komponenten
 <li> Oekosystem
+<li> Quellenverzeichnis
 </ol>
 
 
@@ -47,7 +48,57 @@ Mit der Version 2 wurden optional Optimierungen für Mobilgeräte ergänzt.
 Die Version 3 wurde von Grund auf überarbeitet, um anstatt lediglich mobile Styles zu ergänzen, diese direkt im Kern des Layouts, von Anfang an, zu berücksichtigen. 
 Kernstück der Unterstützung mobiler Geräte stellt das responsive Design dar.  
 
-3. Responsive Webdesign:
+3. Responsive Webdesign
 ------------------------
+
+Die sich mit Anbahnung des Internet of Things immer weiter diversifizierende Systemlandschaft stellt eine zunehmende Herausforderung für die Entwickler von Webinhalten dar. 
+Die Geräte weisen stark unterschiedliche Eigenschaft ihrer Displaygröße, -auflösung und Bedienbarkeit auf.  
+Um eine Webanwendung für alle Geräte bzw. deren User komfortabel nutzbar zu machen, muss sich das Seitendesign an die Gegebenheiten auf dem jeweiligen Gerät anpassen. 
+
+Dies macht aber noch keine responsive Website aus. 
+Denn durch entsprechende Abfrage des User-Agents im http-Header können einfach entsprechen unterschiedlich hinterlegte Designtemplates je nach Gerät Anwendung finden – also einfach auf eine mobile Version weitergeleitet werden. 
+Das responsive Webdesign hingegen setzt nicht auf unterschiedliche Websiten um sich an die Geräte anzupassen. 
+Es wird lediglich eine Website erstellt, welche sich durch Änderung des zur Verfügung stehenden Raumes automatisch daran anpasst.
+
+Um dies umzusetzen müssen Displaygröße und ähnliche Parameter wie beispielsweise zur Verfügung stehende Eingabegeräte abgefragt und entsprechend darauf reagiert werden. 
+
+i. Media Queries
+----------------
+Um entsprechend auf die Bildschirmbreite der Geräte reagieren zu können werden sogenannte Media Queries eingesetzt.   Diese kennen Medientypen und Medienmerkmalen. Treffen die entsprechenden abgefragten Medientypen, Merkmale oder eine Kombination aus beiden zu, so werden entsprechend spezielle CSS-Regeln angewandt. Die beiden meistverwendeten und unterstützten Medientypen sind screen und print. Daneben existieren noch Sonderformate wie beispielsweise die für einen Barrierefreien Zugang, darunter: aural (für die maschinelle Sprachausgabe), braille (Tastbare wiedergabe in der Blindenschrift ), embossed (Drucker die Blindenschrift auf Papier prägen). 
+
+Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an unterschiedlichen Stellen geschehen:
+
+* Einbinden unterschiedlicher Styledateien für unterschiedliche Medientypen: 
+	"<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
+* Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp. 
+	"<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
+* Alle CSS-Regeln werden in einem Stylesheet untergebracht.
+	"/* CSS-Regeln für alle Ausgabegeräte */
+	@media print {
+	/* zusätzliche CSS-Regeln für Drucker */"(selfhtml: CSS/Media Queries, 2014)
+
+Nachteile der unterschiedlichen Varianten: In Variante eins kommen vermutlich in beiden Dateien zum Teil redundante Regeln vor, zudem müssen beide Dateien geladen werden. 
+Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beide Dateien vom Endgerät geladen werden. 
+
+ii. Viewport
+------------
+
+iii. Grid-System
+----------------
+
+6. Quellenverzeichnis
+---------------------
+Jendryschik, Michael [2010]: Allen recht, in: iX (2010) heise.de/-1058764 (15.05.2014)
+
+Otto, Mark [2012]: Building Twitter Bootstrap, 2012, alistapart.com/article/building-twitter-bootstrap (16.05.2013)
+
+selfhtml [2014]: CSS/Media Queries, 2014, http://wiki.selfhtml.org/wiki/CSS/Media_Queries (04.02.2014, 15.05.2014)
+
+w3schools [NAN]: CSS How To…, NAN, www.w3schools.com/css/css_howto.asp
+
+bootstrap [2014]: CSS : Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system., 2014, http://holdirbootstrap.de/css/ (18.05.2014)
+
 
 
