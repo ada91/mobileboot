@@ -60,32 +60,61 @@ Denn durch entsprechende Abfrage des User-Agents im http-Header können einfach e
 Das responsive Webdesign hingegen setzt nicht auf unterschiedliche Websiten um sich an die Geräte anzupassen. 
 Es wird lediglich eine Website erstellt, welche sich durch Änderung des zur Verfügung stehenden Raumes automatisch daran anpasst.
 
-Um dies umzusetzen müssen Displaygröße und ähnliche Parameter wie beispielsweise zur Verfügung stehende Eingabegeräte abgefragt und entsprechend darauf reagiert werden. 
+Um dies umzusetzen müssen Displaygröße und ähnliche Parameter wie beispielsweise zur Verfügung stehende Eingabegeräte abgefragt und entsprechend darauf reagiert werden.
 
 i. Media Queries
 ----------------
-Um entsprechend auf die Bildschirmbreite der Geräte reagieren zu können werden sogenannte Media Queries eingesetzt.   Diese kennen Medientypen und Medienmerkmalen. Treffen die entsprechenden abgefragten Medientypen, Merkmale oder eine Kombination aus beiden zu, so werden entsprechend spezielle CSS-Regeln angewandt. Die beiden meistverwendeten und unterstützten Medientypen sind screen und print. Daneben existieren noch Sonderformate wie beispielsweise die für einen Barrierefreien Zugang, darunter: aural (für die maschinelle Sprachausgabe), braille (Tastbare wiedergabe in der Blindenschrift ), embossed (Drucker die Blindenschrift auf Papier prägen). 
+Um entsprechend auf die Bildschirmbreite der Geräte reagieren zu können werden sogenannte Media Queries eingesetzt. Diese kennen Medientypen und Medienmerkmalen. 
+Treffen die entsprechenden abgefragten Medientypen, Merkmale oder eine Kombination aus beiden zu, so werden entsprechend spezielle CSS-Regeln angewandt. 
+
+Die beiden meistverwendeten und unterstützten <b>Medientypen</b> sind screen und print. 
+Daneben existieren noch Sonderformate wie beispielsweise die für einen Barrierefreien Zugang, darunter: aural (für die maschinelle Sprachausgabe), 
+braille (Tastbare wiedergabe in der Blindenschrift ), embossed (Drucker die Blindenschrift auf Papier prägen). 
+
+Die wichtigsten <b>Medienmerkmale</b> sind: 
+
+* width/height: Höhe oder Breite des Anzeigebreichs bzw. der Seite (bei paginierter Ausgabe.) 
+* device- width/device-height: Die Maximale Breite bzw. Höhe des Gerätedisplays.
+* orientation: Es existieren die Werte portrait oder landscape.
+* aspect-ratio: Seitenverhältnis des Darstellungsbereichs.
+* device-aspect-ratio: Seitenverhältnis des Gerätes.
+* color: Anzahl der Farbtiefe in Bit pro Kanal (RGB).
+* color-index: Beschreibt die Anzahl an Einträgen der darstellbaren Farben in einer Farbindextabelle auf dem Gerät. (Falls Indextabelle vorhanden sonst 0)
+* monochrome: Beschreibt die Tiefe in Bit in der Graustufen auf einem schwarz/weiß Gerät dargestellt werden können. (Bei Farbgeräten = 0). 
+* resolution: Fragt die Pixeldichte ab.  
+
+
+Die Merkmale können zum Teil durch min- und max- Bedingungen ergänzt werden. 
+Medienmerkmale können untereinander sowie mit Medientypen durch den Operatur and verknüpft werden.
 
 Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an unterschiedlichen Stellen geschehen:
 
 * Einbinden unterschiedlicher Styledateien für unterschiedliche Medientypen: 
 
-	"<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
-	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
+	<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print">  (selfhtml: CSS/Media Queries, 2014)
 	
 * Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp: 
 
-	"<link rel="stylesheet" href="stylesheet.css">
-	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"(selfhtml: CSS/Media Queries, 2014)
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print"> (selfhtml: CSS/Media Queries, 2014)
 	
 * Alle CSS-Regeln werden in einem Stylesheet untergebracht:
 	
-	"/* CSS-Regeln für alle Ausgabegeräte */
-	@media print {
-	/* zusätzliche CSS-Regeln für Drucker */"(selfhtml: CSS/Media Queries, 2014)
+	/* CSS-Regeln für alle Ausgabegeräte */
+	@media only screen and (min-width: 775px) and (max-width: 1000px) {
+	/* CSS Regeln für die Ausgabe auf Bildschirmen welche eine Größe zwischen 775 und 1000 Pixeln aufweisen. */}
 
 Nachteile der unterschiedlichen Varianten: In Variante eins kommen vermutlich in beiden Dateien zum Teil redundante Regeln vor, zudem müssen beide Dateien geladen werden. 
 Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beide Dateien vom Endgerät geladen werden. 
+
+Bei Bootstrap erfolgt die Media-Abfrage in der CSS-Datei, welche später eingebunden wird. 
+
+@media (min-width: @screen-sm-min) { /* CSS-Regeln für die Geräte der Kategorie sm */ }
+
+Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der einzelnen Klassen (Auf welche nachfolgend noch eingegangen wird) eingesetzt. Für jede Klasse existiert eine eigene Media Queries.  
+
+
 
 ii. Viewport
 ------------
