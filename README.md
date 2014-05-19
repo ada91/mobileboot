@@ -6,14 +6,14 @@ Agenda
 <ol>
 <li> Facts
 <li> Geschichte
-<li>Responsive Webdesign
+<li> Responsive Webdesign
 	<ol>
 		<li> Media Queries
 		<li> Viewport 
 		<li> Grid-System
 	</ol>
-<li> Komponenten
-<li> Oekosystem
+<li> Entwickeln mit Bootstrap
+<li> Das Bootstrap-Ökosystem
 <li> Quellenverzeichnis
 </ol>
 
@@ -93,6 +93,48 @@ ii. Viewport
 iii. Grid-System
 ----------------
 
+4. Entwickeln mit Bootstrap
+---------------------------
+In diesem Abschnitt wird erläutert, wie man mit dem Bootstrap-Framework entwickeln kann. 
+
+Dazu müssen zunächst die erforderlichen Dateien heruntergeladen werden. Folgender [Link][download] führt dabei zu der entsprechenden Website:
+
+  [download]: http://getbootstrap.com/getting-started/#download  "Download von Bootstrap"
+  
+Hierbei kann zwischen verschiedenen Versionen der Dateien ausgewählt werden:
+<ol>
+<li> CSS, JavaScript und Schrifttypen in bereits kompilierter und komprimierter Version</li>
+<li> Less, JavaSript und Schrifttypen als Quelldateien</li>
+<li> Von Less nach Sass portiertiertes Framework</li>
+</ol>
+Version zwei verlangt dabei dass ein Less-Compiler eingerichtet ist, liefert jedoch auch die Bootstrap-Dokumentation mit.
+Version drei eignet sich für das Einbinden von Bootstrap in Rails, Compass oder Sass-only Projekte. 
+Nachfolgend wird Version eins verwendet.
+
+Die entsprechenden Dateien müssen im Anschluss im Header des HTML-Dokumentes über das <script> bzw. <link>-Tag eingebunden werden.
+
+Alternativ zum Download der Bootstrap-Dateien kann das Content Delivery Network (CDN) [MaxCDN][max] verwendet werden.
+[max] http://www.bootstrapcdn.com/
+
+Dazu müssen statt den Verweisen auf die heruntergeladenen Dateien die entsprechenden Links von MaxCDN angegeben werden.
+
+	<!-- Aktuellstes kompiliertes und minimiertes CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	
+	<!-- Optional: Thema -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	
+	<!-- Aktuellstes kompiliertes und minimiertes JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+Eine weitere Möglichkeit zur "Installation" von Bootstrap ist die Verwendung des Packet-Managers [Bower][bow].
+[bow] https://github.com/bower/bower
+
+	$ bower install bootstrap
+
+Außerdem muss das Framework [JQuery][jq] in das Projekt eingebunden werden. Hierzu können die entsprechenden Dateien wiederum entweder heruntergeladen oder über ein CDN eingebunden werden.
+[jq] http://jquery.com/
+ 
 6. Quellenverzeichnis
 ---------------------
 Jendryschik, Michael [2010]: Allen recht, in: iX (2010) heise.de/-1058764 (15.05.2014)
