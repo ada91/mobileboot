@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 
 <!--
 
@@ -173,10 +173,15 @@
         
     -->
     <div class="step" data-x="0" data-y="0" data-scale="15">
+<<<<<<< HEAD
         <img src="img/bootstrap.png" width="70" height="70"><q><sup>1</sup><b>Bootstrap</b></q>
 		<p>„The most popular front-end framework for developing responsive, mobile first projects on the web.“<sup>2</sup></p>
 		<span style="position:absolute; bottom:200px; left:780px; font-size:18px"><sup>1</sup>Logonoid, 2014.<br/>
 								<sup>2</sup>Bootstrap, 2014b.</span>
+=======
+        <img src="img/bootstrap.png" width="70" height="70"><q><b>ootstrap</b></q>
+		<p>The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
+>>>>>>> 9b44b88c84d578c47f59424816c592757e35817a
     </div>
 
     <!--
@@ -219,8 +224,8 @@
 			<li><p>Framework auf Basis von HTML & CSS zur UI-Gestaltung von Webanwendungen.</p></li>
 			<li><p>Nutzt CSS-Erweiterung LESS.</p></li>
 			<li><p>Apache License 2.0 ab Bootstrap 3.1 MIT-Lizenz.</p></li>
-			<li><p>Grundgedanke: "pairing designers with developers".<sup>3</sup></p></li>
-			<span class="footnote"><sup>3</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
+			<li><p>Grundgedanke: "pairing designers with developers".<sup>1</sup></p></li>
+			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
 		</ul><br/>
 		
 	</div>
@@ -233,16 +238,16 @@
 		<h1 class="title2">Geschichte</h1></br>
 		<ul>
 			<li>Start als internes Projekt bei <img src="img/logo_twitter.png" style="margin-left:10px" height="27px">
-			<li>Ziel: Vereinheitlichung der Oberflächenentwicklung.
+			<li>Ziel: Vereinheitlichung der Oberfl&aumlchenentwicklung.
 			<li>Der Entwicklungsprozess:
 					<ul style="list-style: circle">
 						<li>"Ideenfindung,
 						<li>Diskussion und Auseinandersetzung mit den Features,
 						<li>Implementierung
-						<li>Abstraktion und Dokumentation"<sup>4</sup>
+						<li>Abstraktion und Dokumentation"<sup>1</sup>
 					</ul>
 			</ul><br/>
-			<span class="footnote"><sup>4</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
+			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
 		
 		</div>
 <!-- Geschichte 2 -->
@@ -254,8 +259,8 @@
 		<h1 class="title2">Geschichte</h1></br>
 		<ul>
 			<li>Bootstrap als lebendiger Styleguide.
-			<li>Veröffentlichung auf GitHub.
-			<li>Seit Version 2 Ergänzungen für Mobilgeräte. Ab Version 3 fester Bestandteil.
+			<li>Ver&oumlffentlichung auf GitHub.
+			<li>Seit Version 2 Erg&aumlnzungen f&uumlr Mobilger&aumlte. Ab Version 3 fester Bestandteil.
 		</ul>
 	</div>
 
@@ -273,7 +278,7 @@
 		<ul>
 			<li>Responsive Webdesign <b>vs.</b> Mobile Version. </br>
 			<p style="font-size:21px">&#8594 Eine sich via Media Queries anpassende Seite <b>vs.</b> Umleitung aufgrund des User-Agent auf Mobile-Seite.</p></br>
-			<li><p>Passt sich dem zur Verfügung stehendem Raum (Breite) auf dem betrachteten Gerät an. </p></br>
+			<li><p>Passt sich dem zur Verf&uumlgung stehendem Raum (Breite) auf dem betrachteten Ger&aumlt an. </p></br>
 			<li>Hierzu werden Media Queries angewendet: 
 				<ul style="list-style: circle">
 						<li>Dient zum Aufruf dedizierter CSS-Stylesheets je nach Medium und Medienmerkmal.
@@ -287,21 +292,21 @@
 		<h1 class="slidetitle">Media Queries</h1><br/>
 		Unterschiedliche Arten der Media Querie Einbindung:
 		<ul>
-			<li> Für jeden "Fall" unterschiedliche Styledateien:<sup>1</sup> 
+			<li> F&uumlr jeden "Fall" unterschiedliche Styledateien:<sup>1</sup> 
 			<textarea name="code" class="html" cols="60" rows="10">
 			<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
 			<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
 			</textarea>
-			<li> Allgemeine und ergänzende Styledatei:<sup>5</sup>
+			<li> Allgemeine und erg&aumlnzende Styledatei:<sup>1</sup>
 			<textarea name="code" class="html" cols="60" rows="10">
 			<link rel="stylesheet" href="stylesheet.css">
 			<link rel="stylesheet" href="druck-stylesheet.css" media="print">
 			</textarea>
 			<li> Media Queries im Stylesheet: 
 			<textarea name="code" class="css" cols="60" rows="10">
-			/* CSS-Regeln für alle Ausgabegeräte */
+			/* CSS-Regeln f&uumlr alle Ausgabeger&aumlte */
 			@media only screen and (min-width: 775px) and (max-width: 1000px) {
-			/* CSS Regeln für die Ausgabe auf Bildschirmen welche eine Grö&szlige zwischen 775 
+			/* CSS Regeln f&uumlr die Ausgabe auf Bildschirmen welche eine Gr&ouml&szlige zwischen 775 
 			und 1000 Pixeln aufweisen. */}
 			</textarea>
 			&#8594 Bei Bootstrap:
@@ -310,13 +315,13 @@
 			</textarea>
 		</ul>
 		
-		<span class="footnote"><sup>5</sup>selfhtml: CSS/Media Queries, 2014</span>
+		<span class="footnote"><sup>1</sup>selfhtml: CSS/Media Queries, 2014</span>
 	</div>
 	
 		<div class="step slide multi" data-x="-3000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
 		<ul>
-			<li>Wichtig für die korrekte Darstellung auf mobilen Engeräten. 
+			<li>Wichtig f&uumlr die korrekte Darstellung auf mobilen Enger&aumlten. 
 			<li>Gibt dem Browser an, in welcher Breite die Seite am besten gerendert werden sollte. 
 			<li>Default Wert der meisten mobilen Browser sind 980px.
 		</ul>
@@ -327,14 +332,14 @@
 	
 	<div class="step slide multi" data-x="-3000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
-		<p>Pixelangaben und device width auf mobilen Endgeräten.</p> </br>
+		<p>Pixelangaben und device width auf mobilen Endger&aumlten.</p> </br>
 		<div align="center"><img src="img/Viewport.JPG" height="515px"></div>
 		</div>
 		
 	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
 		<ul>
-			<li><p>Zeilen und Splaten über welche das Layout für den Inhalt entsteht.</p></br>
+			<li><p>Zeilen und Splaten &uumlber welche das Layout f&uumlr den Inhalt entsteht.</p></br>
 			<li>Erzeugen einer Zeile:
 			<textarea name="code" class="html" cols="60" rows="10">
 			<div class="row"> <\div> 
@@ -353,8 +358,8 @@
 	
 		<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
-		<p>Bootstrap Default Geräteklassen:</p></br>
-		<embed src="../grid_examples/table.html" width="770px" height="500px"></embed>
+		<p>Bootstrap Default Ger&aumlteklassen:</p></br>
+		<iFrame src="../grid_examples/table.html" width="770px" height="500px"></iFrame>
 		<span class="footnote">Quelle: bootstrap: CSS, 2014</span>
 		
 	</div>
@@ -368,10 +373,10 @@
 					</div> 
 		</textarea></br>
 		Bei 800px:
-		<embed src="../grid_examples/grid_example1.html" width="800px" height="65 px"></embed>
+		<iFrame src="../grid_examples/grid_example1.html" width="800px" height="65 px"></iFrame>
 		
 		Bei 767px:
-		<embed src="../grid_examples/grid_example1.html" width="767px" height="130px"></embed>
+		<iFrame src="../grid_examples/grid_example1.html" width="767px" height="130px"></iFrame>
 		
 	</div>
 	
@@ -395,19 +400,19 @@
 	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
 		<p>Bei 320px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="320px" height="300px"></embed>
+		<iFrame src="../grid_examples/grid_example2.html" width="320px" height="300px"></iFrame>
 	</div>
 	
 	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
 		<p>Bei 768px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="768px" height="200px"></embed>
+		<iFrame src="../grid_examples/grid_example2.html" width="768px" height="200px"></iFrame>
 	</div>
 	
 	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Grid-System </h1><br/>
 		<p>Bei 992px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="992px" height="200px"></embed>
+		<iFrame src="../grid_examples/grid_example2.html" width="992px" height="200px"></iFrame>
 	</div>
 	
 	<!-- Intro: Entwickeln mit Bootstrap -->
@@ -421,8 +426,7 @@
 	
 	<div class="slide step multi" data-x="-1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Entwickeln mit Bootstrap</h1><br/>
-		<img src="img/programmierer.jpg" height="70%"><sup>6</sup>
-		<span class="footnote"><sup>6</sup>Echtlustig.com, unbekannt.</span>
+		<img src="img/programmierer.jpg" height="70%">
 	</div>
 	
 	
@@ -466,7 +470,7 @@
     </div>
 	<div class="step slide multi" data-x="0" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Hello World</h1><br/>
-		<embed src="../examples/1.html"></embed>
+		<iFrame src="../examples/1.html"></iFrame>
 	</div>
 	
 	
@@ -487,7 +491,7 @@
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default">Klick mich!</button>
 		</textarea>
-		<embed src="../examples/2.html" height="90px"></embed>
+		<iFrame src="../examples/2.html" height="50px"></iFrame>
 	</div>
 	<div class="step slide multi" data-x="1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Buttons</h1><br/>
@@ -495,7 +499,7 @@
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default">Klick mich!</button>
 		</textarea>
-		<embed src="../examples/2.html" height="90px"></embed>
+		<iFrame src="../examples/2.html" height="90px"></iFrame>
 		<p>Erstellen eines Buttons mit Glyphicon</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default btn-lg">
@@ -509,14 +513,14 @@
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default">Klick mich!</button>
 		</textarea>
-		<embed src="../examples/2.html" height="90px"></embed>
+		<iFrame src="../examples/2.html" height="90px"></iFrame>
 		<p>Erstellen eines Buttons mit Glyphicon</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default btn-lg">
 				<span class="glyphicon glyphicon-star"></span> Star
 			</button>
 		</textarea>
-		<embed src="../examples/3.html"></embed>
+		<iFrame src="../examples/3.html"></iFrame>
 	</div>
 	
 	<!----- 
@@ -527,8 +531,8 @@
 	
 	-->
 	<div class="step slide multi" data-x="2000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Dropdown-Menüs</h1><br/>
-		<p>Erstellen eines Dropdown-Menüs</p>
+		<h1 class="slidetitle">Dropdowns</h1><br/>
+		<p>Erstellen eines Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
 				<button class="btn btn-default" type="button" id="dropdown" data-toggle="dropdown">Dropdown Trigger</button>
@@ -542,8 +546,8 @@
 		</textarea>
 	</div>
 	<div class="step slide multi" data-x="2000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Dropdown-Menüs</h1><br/>
-		<p>Erstellen eines Dropdown-Menüs</p>
+		<h1 class="slidetitle">Dropdowns</h1><br/>
+		<p>Erstellen eines Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
 				<button class="btn btn-default" type="button" id="dropdown" data-toggle="dropdown">Dropdown Trigger</button>
@@ -555,11 +559,11 @@
 				</ul>
 			</div>
 		</textarea>
-		<embed src="../examples/4.html" height="300px"></embed>
+		<iFrame src="../examples/4.html" height="300px"></iFrame>
 	</div>
 	<div class="step slide multi" data-x="3000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Dropdown-Menüs</h1><br/>
-		<p>Erstellen eines komplexeren Dropdown-Menüs</p>
+		<h1 class="slidetitle">Dropdowns</h1><br/>
+		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
 				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger  <span class="caret"></span></button>
@@ -576,8 +580,8 @@
 		</textarea>
 	</div>
 	<div class="step slide multi" data-x="3000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Dropdown-Menüs</h1><br/>
-		<p>Erstellen eines komplexeren Dropdown-Menüs</p>
+		<h1 class="slidetitle">Dropdowns</h1><br/>
+		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div class="dropdown">
 				<button class="btn btn-default btn-lg" type="button" id="dropdown" data-toggle="dropdown"><span class="glyphicon glyphicon-home"></span> Dropdown Trigger  <span class="caret"></span></button>
@@ -592,7 +596,7 @@
 				</ul>
 			</div>
 		</textarea>
-		<embed src="../examples/5.html" height="270px"></embed>
+		<iFrame src="../examples/5.html" height="270px"></iFrame>
 	</div>
 	
 	
@@ -622,7 +626,7 @@
 			  <input type="text" class="form-control" placeholder="E-Mail">
 			</div>
 		</textarea>
-		<embed src="../examples/6.html" height="270px"></embed>
+		<iFrame src="../examples/6.html" height="270px"></iFrame>
 	</div>
 	
 	<!----- 
@@ -633,7 +637,7 @@
 	
 	-->
 	<div class="step slide multi" data-x="5000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Karussel</h1><br/>
+		<h1 class="slidetitle">Karoussel</h1><br/>
 		<p>Erstellen eines Bilderkarussels</p>
 		<textarea name="code" class="html" cols="60" rows="10">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -647,13 +651,13 @@
 				<div class="item active">
 				  <img src="../impress/img/keep.png" alt="Test1" width="400px" height="400px">
 				  <div class="carousel-caption">
-					<p style="color:white">Quelle: Reincubate, 2014.</p>
+					<p style="color:black">Quelle [1]: http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-take-computer-programming.png</p>
 				  </div>
 				</div>
 				<div class="item">
 				  <img src="../impress/img/programmierfunktion.jpg" alt="Test2" width="400px" height="400px">
 				  <div class="carousel-caption">
-					<p style="color:black">Quelle: Kroener, 2008.</p>
+					<p style="color:black">Quelle [2]: http://www.peterkroener.de/wp-content/uploads/2008/02/programmieren.jpg</p>
 				  </div>
 				</div>
 			 </div>
@@ -668,9 +672,9 @@
 		</textarea>
 	</div>
 	<div class="step slide multi" data-x="5000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Karussel</h1><br/>
+		<h1 class="slidetitle">Karoussel</h1><br/>
 		<p>Erstellen eines Bilderkarussels</p>
-		<embed src="../examples/7.html" width="400px" height="400px"></embed>
+		<iFrame src="../examples/7.html" width="400px" height="400px"></iFrame>
 	</div>
 	
 	
@@ -697,26 +701,17 @@
 		</ul>
 	</div>
 	
-	<div class="step slide multi" data-x="7000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Quellenverzeichnis</h1><br/>
-		<p>Jendryschik, Michael [2010]: Allen recht. In: iX (2010) heise.de/-1058764 (15.05.2014)</p></br>
-		<p>Otto, Mark [2012]: Building Twitter Bootstrap. 2012, alistapart.com/article/building-twitter-bootstrap (16.05.2013)</p></br>
-		<p>Selfhtml [2014]: CSS/Media Queries. 2014, http://wiki.selfhtml.org/wiki/CSS/Media_Queries (04.02.2014, 15.05.2014)</p></br>
-		<p>W3schools [NAN]: CSS How To�. NAN, www.w3schools.com/css/css_howto.asp</p></br>
+	<div class="step slide" data-x="7000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Literaturverzeichnis</h1><br/>
+		<p>Jendryschik, Michael [2010]: Allen recht, in: iX (2010) heise.de/-1058764 (15.05.2014)</p></br>
+		<p>Otto, Mark [2012]: Building Twitter Bootstrap, 2012, alistapart.com/article/building-twitter-bootstrap (16.05.2013)</p></br>
+		<p>selfhtml [2014]: CSS/Media Queries, 2014, http://wiki.selfhtml.org/wiki/CSS/Media_Queries (04.02.2014, 15.05.2014)</p></br>
+		<p>w3schools [NAN]: CSS How To..., NAN, www.w3schools.com/css/css_howto.asp</p></br>
     </div>
 	
-	<div class="step slide multi" data-x="7000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Quellenverzeichnis</h1><br/>
-		<p>Bootstrap [2014a]: CSS : Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system. 2014, http://holdirbootstrap.de/css/ (18.05.2014)</p></br>
-		<p>Bootstrap [2014b]: Bootstrap. 2014, http://getbootstrap.com/ (15.05.2014)</p></br>
-		<p>Logonoid.com [2014]: Bootstrap Logo/ Internet/ Logonoid.com. 2014, http://logonoid.com/bootstrap-logo/ (15.05.2014)</p></br>
-		<p>Echtlustig.com [unbekannt]: Programmierer kennen das Problem | Echtlustig.com. unbekannt, http://echtlustig.com/25898/programmierer-kennen-das-problem (13.05.2014)</p></br>		
-    </div>
-	
-	<div class="step slide multi" data-x="7000" data-y="5000" data-rotate="-90">
-		<h1 class="slidetitle">Quellenverzeichnis</h1><br/>
-		<p>Reincubate [2014]: Keep calm and take computer programming. 2014, http://www.keepcalm-o-matic.co.uk/p/keep-calm-and-take-computer-programming/ (13.05.2014)</p></br>
-		<p>Kroener, Peter [2008]: Programmierfunktion. 2008, http://www.peterkroener.de/wp-content/uploads/2008/02/programmieren.jpg (14.05.2014)</p></br>	
+	<div class="step slide" data-x="7000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Literaturverzeichnis</h1><br/>
+		<p>bootstrap [2014]: CSS : Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system., 2014, http://holdirbootstrap.de/css/ (18.05.2014)</p></br>
     </div>
 	
 	<!-- Die Mauer :-( -->
