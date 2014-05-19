@@ -117,6 +117,24 @@ Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der ein
 
 ii. Viewport
 ------------
+Um ein korrekte Darstellung der responsiven Seite auf mobilen Geräten sicherzustellen, sollte in der HTML Datei im <head>  
+Folgendes angegeben werden: 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+Dies sorgt dafür, dass sich die Seite beim Öffnen auch wirklich an die Breite des Gerätebildschirms anpasst. 
+Denn die mobilen Geräte versuchen beim Öffnen die Seiten in voller Breite anzuzeigen. 
+Hierzu setzen die meisten mobilen Browser ihren Viewport auf eine Breite von 980px, in welcher sie die Seite rendern. 
+Daraufhin skalieren sie die Seite so, dass sie komplett auf dem Gerät angezeigt wird. 
+Dies dient dazu dem Nutzer eine Übersicht, für Seiten welche nicht für Mobilgeräte optimiert sind, zu verschaffen. 
+Die responsive Website soll sich allerdings an das Gerät anpassen. Hierzu dient das Viewport Tag, welches die Breite des Inhaltes auf die vom Gerät zurückgegebene Breite setzt. 
+Die Gerätebreite die vom Browser zurückgegeben wird, entspricht meist nicht der tatsächlichen physikalischen Pixelanzahl. 
+Dies ist auch sinnvoll, denn die Pixeldichte auf mobilen Geräten steigt immer weiter. 
+So würde ein aktuelles Smartphone wie das Sony Xperia Z1 mit eine Auflösung von 1920 × 1080 Pixeln in die Bootstrap Kategorie „Mittelgroße Geräte/Desktops“ fallen. 
+Der Entwickler einer responsive Website möchte aber natürlich ein 5“ Gerät mit dem Layout für Smartphones ansprechen. 
+Daher gibt das Gerät einen Viewport von 360x598 zurück. 
+Eine Sammlung welcher mobilen Engeräte welchen Viewport angeben bietet die Seite: 
+http://viewportsizes.com
 
 
 
