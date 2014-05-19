@@ -32,9 +32,9 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -265,6 +265,10 @@ a:focus {
 .slidetitle {
 	font-size: 50px;
 }
+/*Eigene Klasse Johannes:*/
+.title2 {
+	font-size: 42px;
+}
 .impress-enabled .multi { opacity: 0.01; }
 
 #title {
@@ -296,6 +300,12 @@ a:focus {
 
 #title .footnote {
     font-size: 32px;
+}
+
+/*Eigene Klasse Johannes:*/
+.footnote {
+    font-size: 18px;
+	position: absolute; bottom: 0; left: 0;
 }
 
 /*

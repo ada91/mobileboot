@@ -172,7 +172,7 @@
         It will not be rotated or scaled.
         
     -->
-    <div class="step" data-x="-1000" data-y="-5500" data-scale="20">
+    <div class="step" data-x="0" data-y="0" data-scale="15">
         <img src="img/bootstrap.png" width="70" height="70"><q><b>ootstrap</b></q>
 		<p>The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
     </div>
@@ -197,22 +197,236 @@
 	<!--
 	
 	-->
-    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="90">
+	
+	<div id="overview" class="step" data-x="0" data-y="0" data-scale="15">
+    </div>
+	
+    <div class="step slide" data-x="-8000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Agenda</h1><br/>
 		<ol>
-			<li>Allgemeines und Geschichtliches</li>
-			<li>Eigenschaften und Funktionsweise: Responsive webdesign!! ueber CSS</li>
+			<li>Facts und Geschichte</li>
+			<li>Responsive Webdesign</li>
 			<li>Komponenten / Vorgehensweise mit Embedded Demo</li>
 			<li>Oekosystem: Jetstrap/ Templates / JavaScript-Plugins</li>
 		</ol>
     </div>
 	
+	<!-- Facts -->
+	<!--
+	
+	-->
+	<div class="step" data-x="-5500" data-y="2200" data-scale="7" data-rotate="-45">
+		<p><b>Facts und </br>
+				Geschichte</b></p>
+    </div>
+	
+	<div class="step slide multi" data-x="-7000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Einleitung</h1><br/>
+		<h1 class="title2">Facts</h1></br>
+		<ul>
+			<li><p>Framework auf Basis von HTML & CSS zur UI-Gestaltung von Webanwendungen.</p></li>
+			<li><p>Nutzt CSS-Erweiterung LESS.</p></li>
+			<li><p>Apache License 2.0 ab Bootstrap 3.1 MIT-Lizenz.</p></li>
+			<li><p>Grundgedanke: "pairing designers with developers".<sup>1</sup></p></li>
+			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
+		</ul><br/>
+		
+	</div>
+<!-- Geschichte 1 -->
+	<!--
+	
+	-->
+	<div class="step slide multi" data-x="-6000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Einleitung</h1><br/>
+		<h1 class="title2">Geschichte</h1></br>
+		<ul>
+			<li>Start als internes Projekt bei <img src="img/logo_twitter.png" style="margin-left:10px" height="27px">
+			<li>Ziel: Vereinheitlichung der Oberfl&aumlchenentwicklung.
+			<li>Der Entwicklungsprozess:
+					<ul style="list-style: circle">
+						<li>"Ideenfindung,
+						<li>Diskussion und Auseinandersetzung mit den Features,
+						<li>Implementierung
+						<li>Abstraktion und Dokumentation"<sup>1</sup>
+					</ul>
+			</ul><br/>
+			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
+		
+		</div>
+<!-- Geschichte 2 -->
+	<!--
+	
+	-->
+	<div class="step slide multi" data-x="-6000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Einleitung</h1><br/>
+		<h1 class="title2">Geschichte</h1></br>
+		<ul>
+			<li>Bootstrap als lebendiger Styleguide.
+			<li>Ver&oumlffentlichung auf GitHub.
+			<li>Seit Version 2 Erg&aumlnzungen f&uumlr Mobilger&aumlte. Ab Version 3 fester Bestandteil.
+		</ul>
+	</div>
+
+<!-- Responsive Webdesign -->
+	<!--
+	
+	-->
+	<div class="step" data-x="-3500" data-y="2200" data-scale="7" data-rotate="-45">
+		<p><b>Responsive </br>
+				Webdesign</b></p>
+    </div>
+	
+	<div class="step slide multi" data-x="-5000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Responsive Webdesign</h1><br/>
+		<ul>
+			<li>Responsive Webdesign <b>vs.</b> Mobile Version. </br>
+			<p style="font-size:21px">&#8594 Eine sich via Media Queries anpassende Seite <b>vs.</b> Umleitung aufgrund des User-Agent auf Mobile-Seite.</p></br>
+			<li><p>Passt sich dem zur Verf&uumlgung stehendem Raum (Breite) auf dem betrachteten Ger&aumlt an. </p></br>
+			<li>Hierzu werden Media Queries angewendet: 
+				<ul style="list-style: circle">
+						<li>Dient zum Aufruf dedizierter CSS-Stylesheets je nach Medium und Medienmerkmal.
+						<li>Medientypen: <b>screen, print,</b> ...uvm.
+						<li>Medienmerkmale: <b>width, height, device-height, device width, orientation,</b> ... uvm.
+				</ul>
+		</ul>
+	</div>
+	
+		<div class="step slide multi" data-x="-4000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Media Queries</h1><br/>
+		Unterschiedliche Arten der Media Querie Einbindung:
+		<ul>
+			<li> F&uumlr jeden "Fall" unterschiedliche Styledateien:<sup>1</sup> 
+			<textarea name="code" class="html" cols="60" rows="10">
+			<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
+			<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
+			</textarea>
+			<li> Allgemeine und erg&aumlnzende Styledatei:<sup>1</sup>
+			<textarea name="code" class="html" cols="60" rows="10">
+			<link rel="stylesheet" href="stylesheet.css">
+			<link rel="stylesheet" href="druck-stylesheet.css" media="print">
+			</textarea>
+			<li> Media Queries im Stylesheet: 
+			<textarea name="code" class="css" cols="60" rows="10">
+			/* CSS-Regeln f&uumlr alle Ausgabeger&aumlte */
+			@media only screen and (min-width: 775px) and (max-width: 1000px) {
+			/* CSS Regeln f&uumlr die Ausgabe auf Bildschirmen welche eine Gr&ouml&szlige zwischen 775 
+			und 1000 Pixeln aufweisen. */}
+			</textarea>
+			&#8594 Bei Bootstrap:
+			<textarea name="code" class="css" cols="60" rows="10">
+			@media (min-width: @screen-sm-min) { ... }
+			</textarea>
+		</ul>
+		
+		<span class="footnote"><sup>1</sup>selfhtml: CSS/Media Queries, 2014</span>
+	</div>
+	
+		<div class="step slide multi" data-x="-3000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
+		<ul>
+			<li>Wichtig f&uumlr die korrekte Darstellung auf mobilen Enger&aumlten. 
+			<li>Gibt dem Browser an, in welcher Breite die Seite am besten gerendert werden sollte. 
+			<li>Default Wert der meisten mobilen Browser sind 980px.
+		</ul>
+		<textarea name="code" class="html" cols="60" rows="10">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		</textarea>
+	</div>
+	
+	<div class="step slide multi" data-x="-3000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
+		<p>Pixelangaben und device width auf mobilen Endger&aumlten.</p> </br>
+		<div align="center"><img src="img/Viewport.JPG" height="515px"></div>
+		</div>
+		
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<ul>
+			<li><p>Zeilen und Splaten &uumlber welche das Layout f&uumlr den Inhalt entsteht.</p></br>
+			<li>Erzeugen einer Zeile:
+			<textarea name="code" class="html" cols="60" rows="10">
+			<div class="row"> <\div> 
+			</textarea>
+			<li>Ausgestaltung der "12" Spalten in der Zeile:
+			<textarea name="code" class="html" cols="60" rows="10">
+					<div class="row"> 
+					<div class="col-sm-5">Dieses Feld ist 5/12 breit. Bei <768px Spalten vertikal angeordnet.</div>
+					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
+					<\div> 
+			</textarea>
+		</ul>
+		
+		
+	</div>
+	
+		<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bootstrap Default Ger&aumlteklassen:</p></br>
+		<embed src="../grid_examples/table.html" width="770px" height="500px"></embed>
+		<span class="footnote">Quelle: bootstrap: CSS, 2014</span>
+		
+	</div>
+	
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<textarea name="code" class="html" cols="60" rows="10">
+					<div class="row"> 
+					<div class="col-sm-5">Dieses Feld ist 5/12 breit.</div>
+					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
+					</div> 
+		</textarea></br>
+		Bei 800px:
+		<embed src="../grid_examples/grid_example1.html" width="800px" height="65 px"></embed>
+		
+		Bei 767px:
+		<embed src="../grid_examples/grid_example1.html" width="767px" height="130px"></embed>
+		
+	</div>
+	
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<textarea name="code" class="html" cols="60" rows="10">
+			<div class="row"> 
+				<div class="col-xs-6 col-sm-5 col-md-4">.col-xs-6 .col-sm-5 .col-md-4</div>
+				<div class="col-xs-6 col-sm-5 col-md-5">.col-xs-6 .col-sm-5 .col-md-5</div>
+				<div class="col-sm-2 col-md-2">.col-sm-2 .col-md-2</div>
+				<div class="col-md-1">.col-md-1</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-6 col-sm-9 col-md-2">.col-sm-8 .col-md-5</div>
+				<div class="col-xs-6 col-sm-3 col-md-10">.col-sm-4 .col-md-7</div>
+			</div>
+		</textarea>
+	</div>
+	
+	
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 320px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="320px" height="300px"></embed>
+	</div>
+	
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 768px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="768px" height="200px"></embed>
+	</div>
+	
+	<div class="step slide multi" data-x="-2000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Grid-System </h1><br/>
+		<p>Bei 992px:</p></br>
+		<embed src="../grid_examples/grid_example2.html" width="992px" height="200px"></embed>
+	</div>
 	
 	<!-- Intro: Entwickeln mit Bootstrap -->
 	<!--
 	
 	-->
-	<div class="slide step multi" data-x="0" data-y="-1500" data-rotate="90">
+	<div class="step" data-x="500" data-y="2200" data-scale="7" data-rotate="-45">
+		<p><b>Komponenten</b></p>
+    </div>
+	
+	<div class="slide step multi" data-x="-1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Entwickeln mit Bootstrap</h1><br/>
 		<img src="img/programmierer.jpg" height="70%">
 	</div>
@@ -222,7 +436,7 @@
 	<!--
 	
 	-->
-	<div class="step slide multi" data-x="-1000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="0" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Hello World</h1><br/>
 		<!--<button id='b1' class="show" onclick="show('e1', 's1', 'b1')">Zeige das Ergebnis!</button>-->
 		<textarea name="code" class="html">
@@ -256,7 +470,7 @@
 		</textarea>
 		<!--</code></pre>-->
     </div>
-	<div class="step slide multi" data-x="-1000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="0" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Hello World</h1><br/>
 		<embed src="../examples/1.html"></embed>
 	</div>
@@ -266,14 +480,14 @@
 	<!--
 	
 	-->
-	<div class="step slide multi" data-x="-2000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Buttons</h1><br/>
 		<p>Erstellen eines Buttons</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
 			<button type="button" class="btn btn-default">Klick mich!</button>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-2000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Buttons</h1><br/>
 		<p>Erstellen eines Buttons</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
@@ -281,7 +495,7 @@
 		</textarea>
 		<embed src="../examples/2.html" height="50px"></embed>
 	</div>
-	<div class="step slide multi" data-x="-2000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Buttons</h1><br/>
 		<p>Erstellen eines Buttons</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
@@ -295,7 +509,7 @@
 			</button>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-2000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="1000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Buttons</h1><br/>
 		<p>Erstellen eines Buttons</p>
 		<textarea id="s1" name="code" class="html" cols="60" rows="10">
@@ -318,7 +532,7 @@
 	
 	
 	-->
-	<div class="step slide multi" data-x="-3000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Dropdowns</h1><br/>
 		<p>Erstellen eines Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -333,7 +547,7 @@
 			</div>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-3000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="2000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Dropdowns</h1><br/>
 		<p>Erstellen eines Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -349,7 +563,7 @@
 		</textarea>
 		<embed src="../examples/4.html" height="300px"></embed>
 	</div>
-	<div class="step slide multi" data-x="-4000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="3000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Dropdowns</h1><br/>
 		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -367,7 +581,7 @@
 			</div>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-4000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="3000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Dropdowns</h1><br/>
 		<p>Erstellen eines komplexeren Dropdowns</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -395,7 +609,7 @@
 	
 	
 	-->
-	<div class="step slide multi" data-x="-5000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="4000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Eingabegruppen</h1><br/>
 		<p>Erstellen einer Eingabegruppe</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -405,7 +619,7 @@
 			</div>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-5000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="4000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Eingabegruppen</h1><br/>
 		<p>Erstellen einer Eingabegruppe</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -424,7 +638,7 @@
 	
 	
 	-->
-	<div class="step slide multi" data-x="-6000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="5000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Karoussel</h1><br/>
 		<p>Erstellen eines Bilderkarussels</p>
 		<textarea name="code" class="html" cols="60" rows="10">
@@ -459,19 +673,21 @@
 			</div>
 		</textarea>
 	</div>
-	<div class="step slide multi" data-x="-6000" data-y="-1500" data-rotate="90">
+	<div class="step slide multi" data-x="5000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Karoussel</h1><br/>
 		<p>Erstellen eines Bilderkarussels</p>
 		<embed src="../examples/7.html" width="400px" height="400px"></embed>
 	</div>
 	
 	
-	
-	<div class="step slide multi" data-x="-7000" data-y="-1500" data-rotate="90">
+	<div class="step" data-x="7500" data-y="2200" data-scale="7" data-rotate="-45">
+		<p><b>Oekosystem</b></p>
+    </div>
+	<div class="step slide multi" data-x="6000" data-y="5000" data-rotate="-90">
 		<h1 class="slidetitle">Das Bootstrap-Oekosystem</h1><br/>
 		<p>Bootstrap Interface Builder</p>
 		<ul>
-			<li><a href="http://www.layoutit.com/">LayoutIt! --> Zeigen!</a></li>
+			<li><a href="http://www.layoutit.com/">LayoutIt!</a></li>
 			<li><a href="https://jetstrap.com/">Jetstrap</a></li>
 			<li><a href="http://www.rapidmoon.com/">rapidmoon</a></li>
 		</ul><br/>
@@ -486,217 +702,20 @@
 		</ul>
 	</div>
 	
+	<div class="step slide" data-x="7000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Literaturverzeichnis</h1><br/>
+		<p>Jendryschik, Michael [2010]: Allen recht, in: iX (2010) heise.de/-1058764 (15.05.2014)</p></br>
+		<p>Otto, Mark [2012]: Building Twitter Bootstrap, 2012, alistapart.com/article/building-twitter-bootstrap (16.05.2013)</p></br>
+		<p>selfhtml [2014]: CSS/Media Queries, 2014, http://wiki.selfhtml.org/wiki/CSS/Media_Queries (04.02.2014, 15.05.2014)</p></br>
+		<p>w3schools [NAN]: CSS How To…, NAN, www.w3schools.com/css/css_howto.asp</p></br>
+    </div>
+	
+	<div class="step slide" data-x="7000" data-y="5000" data-rotate="-90">
+		<h1 class="slidetitle">Literaturverzeichnis</h1><br/>
+		<p>bootstrap [2014]: CSS : Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system., 2014, http://holdirbootstrap.de/css/ (18.05.2014)</p></br>
+    </div>
+	
 	<!-- Die Mauer :-( -->
-	
-	<!-- Facts -->
-	<!--
-	
-	-->
-	<div class="step" data-x="-8000" data-y="-1500" data-scale="10" data-rotate="45">
-		<p><b>Einf&uumlhrung</b></p>
-    </div>
-	
-	<div class="step slide multi" data-x="-9000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Einleitung</h1><br/>
-		<h1 class="title2">Facts</h1></br>
-		<ul>
-			<li><p>Framework auf Basis von HTML & CSS zur UI-Gestaltung von Webanwendungen.</p></li>
-			<li><p>Nutzt CSS-Erweiterung LESS.</p></li>
-			<li><p>Apache License 2.0 ab Bootstrap 3.1 MIT-Lizenz.</p></li>
-			<li><p>Grundgedanke: "pairing designers with developers".<sup>1</sup></p></li>
-			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
-		</ul><br/>
-		
-	</div>
-<!-- Geschichte 1 -->
-	<!--
-	
-	-->
-	<div class="step slide multi" data-x="-10000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Einleitung</h1><br/>
-		<h1 class="title2">Geschichte</h1></br>
-		<ul>
-			<li>Start als internes Projekt bei <img src="img/logo_twitter.png" style="margin-left:10px" height="27px">
-			<li>Ziel: Vereinheitlichung der Oberfl&aumlchenentwicklung.
-			<li>Der Entwicklungsprozess:
-					<ul style="list-style: circle">
-						<li>"Ideenfindung,
-						<li>Diskussion und Auseinandersetzung mit den Features,
-						<li>Implementierung
-						<li>Abstraktion und Dokumentation"<sup>1</sup>
-					</ul>
-			</ul><br/>
-			<span class="footnote"><sup>1</sup>Otto, M.: Building Twitter Bootstrap, 2012</span>
-		
-		</div>
-<!-- Geschichte 2 -->
-	<!--
-	
-	-->
-	<div class="step slide multi" data-x="-10000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Einleitung</h1><br/>
-		<h1 class="title2">Geschichte</h1></br>
-		<ul>
-			<li>Bootstrap als lebendiger Styleguide.
-			<li>Ver&oumlffentlichung auf GitHub.
-			<li>Seit Version 2 Erg&aumlnzungen f&uumlr Mobilger&aumlte. Ab Version 3 fester Bestandteil.
-		</ul>
-	</div>
-
-<!-- Responsive Webdesign -->
-	<!--
-	
-	-->
-	<div class="step slide multi" data-x="-11000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Responsive Webdesign</h1><br/>
-		<ul>
-			<li>Responsive Webdesign <b>vs.</b> Mobile Version. </br>
-			<p style="font-size:21px">&#8594 Eine sich via Media Queries anpassende Seite <b>vs.</b> Umleitung aufgrund des User-Agent auf Mobile-Seite.</p></br>
-			<li><p>Passt sich dem zur Verf&uumlgung stehendem Raum (Breite) auf dem betrachteten Ger&aumlt an. </p></br>
-			<li>Hierzu werden Media Queries angewendet: 
-				<ul style="list-style: circle">
-						<li>Dient zum Aufruf dedizierter CSS-Stylesheets je nach Medium und Medienmerkmal.
-						<li>Medientypen: <b>screen, print,</b> ...uvm.
-						<li>Medienmerkmale: <b>width, height, device-height, device width, orientation,</b> ... uvm.
-				</ul>
-		</ul>
-	</div>
-	
-		<div class="step slide multi" data-x="-12000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Media Queries</h1><br/>
-		Unterschiedliche Arten der Media Querie Einbindung:
-		<ul>
-			<li> F&uumlr jeden "Fall" unterschiedliche Styledateien:<sup>1</sup> 
-			<textarea name="code" class="html" cols="60" rows="10">
-			<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
-			<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
-			</textarea>
-			<li> Allgemeine und erg&aumlnzende Styledatei:<sup>1</sup>
-			<textarea name="code" class="html" cols="60" rows="10">
-			<link rel="stylesheet" href="stylesheet.css">
-			<link rel="stylesheet" href="druck-stylesheet.css" media="print">
-			</textarea>
-			<li> Media Queries im Stylesheet: 
-			<textarea name="code" class="css" cols="60" rows="10">
-			/* CSS-Regeln f&uumlr alle Ausgabeger&aumlte */
-			@media only screen and (min-width: 775px) and (max-width: 1000px) {
-			/* CSS Regeln f&uumlr die Ausgabe auf Bildschirmen welche eine Gr&ouml&szlige zwischen 775 
-			und 1000 Pixeln aufweisen. */}
-			</textarea>
-			&#8594 Bei Bootstrap:
-			<textarea name="code" class="css" cols="60" rows="10">
-			@media (min-width: @screen-sm-min) { ... }
-			</textarea>
-		</ul>
-		
-		<span class="footnote"><sup>1</sup>selfhtml: CSS/Media Queries, 2014</span>
-	</div>
-	
-		<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
-		<ul>
-			<li>Wichtig f&uumlr die korrekte Darstellung auf mobilen Enger&aumlten. 
-			<li>Gibt dem Browser an, in welcher Breite die Seite am besten gerendert werden sollte. 
-			<li>Default Wert der meisten mobilen Browser sind 980px.
-		</ul>
-		<textarea name="code" class="html" cols="60" rows="10">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		</textarea>
-	</div>
-	
-	<div class="step slide multi" data-x="-13000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Viewport Meta Tag</h1><br/>
-		<p>Pixelangaben und device width auf mobilen Endger&aumlten.</p> </br>
-		<div align="center"><img src="img/Viewport.JPG" height="515px"></div>
-		</div>
-		
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<ul>
-			<li><p>Zeilen und Splaten &uumlber welche das Layout f&uumlr den Inhalt entsteht.</p></br>
-			<li>Erzeugen einer Zeile:
-			<textarea name="code" class="html" cols="60" rows="10">
-			<div class="row"> <\div> 
-			</textarea>
-			<li>Ausgestaltung der "12" Spalten in der Zeile:
-			<textarea name="code" class="html" cols="60" rows="10">
-					<div class="row"> 
-					<div class="col-sm-5">Dieses Feld ist 5/12 breit. Bei <768px Spalten vertikal angeordnet.</div>
-					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
-					<\div> 
-			</textarea>
-		</ul>
-	</div>
-	
-		<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<p>Bootstrap Default Ger&aumlteklassen:</p></br>
-		<embed src="../grid_examples/table.html" width="770px" height="500px"></embed>
-		<span class="footnote">Quelle: bootstrap: CSS, 2014</span>
-		
-	</div>
-	
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<textarea name="code" class="html" cols="60" rows="10">
-					<div class="row"> 
-					<div class="col-sm-5">Dieses Feld ist 5/12 breit.</div>
-					<div class="col-sm-7">Dieses Feld ist 7/12 breit.</div>
-					</div> 
-		</textarea></br>
-		Bei 800px:
-		<embed src="../grid_examples/grid_example1.html" width="800px" height="65 px"></embed>
-		
-		Bei 767px:
-		<embed src="../grid_examples/grid_example1.html" width="767px" height="130px"></embed>
-		
-	</div>
-	
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<textarea name="code" class="html" cols="60" rows="10">
-			<div class="row"> 
-				<div class="col-xs-6 col-sm-5 col-md-4">.col-xs-6 .col-sm-5 .col-md-4</div>
-				<div class="col-xs-6 col-sm-5 col-md-5">.col-xs-6 .col-sm-5 .col-md-5</div>
-				<div class="col-sm-2 col-md-2">.col-sm-2 .col-md-2</div>
-				<div class="col-md-1">.col-md-1</div>
-			</div>
-			<div class="row"> 
-				<div class="col-xs-6 col-sm-9 col-md-2">.col-sm-8 .col-md-5</div>
-				<div class="col-xs-6 col-sm-3 col-md-10">.col-sm-4 .col-md-7</div>
-			</div>
-		</textarea>
-	</div>
-	
-	
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<p>Bei 320px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="320px" height="300px"></embed>
-	</div>
-	
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<p>Bei 768px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="768px" height="200px"></embed>
-	</div>
-	
-	<div class="step slide multi" data-x="-14000" data-y="-1500" data-rotate="90">
-		<h1 class="slidetitle">Grid-System </h1><br/>
-		<p>Bei 992px:</p></br>
-		<embed src="../grid_examples/grid_example2.html" width="992px" height="200px"></embed>
-	</div>
-	
-		
-	
-    <div class="step slide" data-x="-100000" data-y="-1500" data-rotate="90">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
-    </div>
-	
-	 <div class="step slide" data-x="-110000" data-y="-1500" data-rotate="90">
-        <q>Test Slide. Gibt es schon wieder Konflikte. Oder funktionert es jetzt ?????</q>
-    </div>
-	
     <!--
         
         This is an example of step element being scaled.
@@ -707,11 +726,6 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
-    </div>
 
 	
     <!--
@@ -722,15 +736,7 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
-    </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
-    </div>
 
     <!--
         
@@ -741,9 +747,6 @@
         positioned far away from us (by 3000px).
         
     -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
-    </div>
 
     <!--
         
@@ -765,22 +768,6 @@
         Only one current step has the `present` class.
         
     -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div>
 
     <!--
         
@@ -794,11 +781,6 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
-    </div>
-
     <!--
         
         So to make a summary of all the possible attributes used to position presentation steps, we have:
@@ -814,7 +796,7 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="15">
     </div>
 
 </div>
