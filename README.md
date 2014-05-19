@@ -111,7 +111,7 @@ Version zwei verlangt dabei dass ein Less-Compiler eingerichtet ist, liefert jed
 Version drei eignet sich für das Einbinden von Bootstrap in Rails, Compass oder Sass-only Projekte. 
 Nachfolgend wird Version eins verwendet.
 
-Die entsprechenden Dateien müssen im Anschluss im Header des HTML-Dokumentes über das <script> bzw. <link>-Tag eingebunden werden.
+Die entsprechenden Dateien müssen im Anschluss im Header des HTML-Dokumentes über das Script- bzw. das Link-Tag eingebunden werden.
 
 Alternativ zum Download der Bootstrap-Dateien kann das Content Delivery Network (CDN) [MaxCDN][max] verwendet werden.
 [max] http://www.bootstrapcdn.com/
@@ -134,6 +134,10 @@ Eine weitere Möglichkeit zur "Installation" von Bootstrap ist die Verwendung des
 
 Außerdem muss das Framework [JQuery][jq] in das Projekt eingebunden werden. Hierzu können die entsprechenden Dateien wiederum entweder heruntergeladen oder über ein CDN eingebunden werden.
 [jq] http://jquery.com/
+
+5. Das Bootstrap-Ökosystem
+--------------------------
+
  
 6. Quellenverzeichnis
 ---------------------
