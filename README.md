@@ -207,6 +207,8 @@ Nachdem alle notwendigen Dateien heruntergeladen sind, kann die Programmierung e
 	  </body>
 	</html>
 
+Nachdem das Grundgerüst innerhalb der HTML-Seite erstellt ist, können nun die durch Bootstrap bereitgestellten Elemente und JavaScript-Plugins innerhalb des oben vorgestellten responsiven Designs verwendet werden.
+Weitere Informationen finden sich auf http://getbootstrap.com.
 
 5. Das Bootstrap-Ökosystem
 --------------------------
