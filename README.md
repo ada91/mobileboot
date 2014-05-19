@@ -215,18 +215,18 @@ Nachfolgend sind einige Beispiele aufgelistet:
 
 Bootstrap Interface Builder
 <ul>
-<li>[LayoutIt!](http://www.layoutit.com/)
-<li>[Jetstrap](https://jetstrap.com/)
-<li>[rapidmoon](http://www.rapidmoon.com/)
+<li>LayoutIt!(http://www.layoutit.com/)
+<li>Jetstrap(https://jetstrap.com/)
+<li>rapidmoon(http://www.rapidmoon.com/)
 </ul>
 
 Bootstrap Themes und Templates
 <ul>
-<li>[{Wrap}bootstrap](https://wrapbootstrap.com/)
-<li>[Bootstrap Zero](http://bootstrapzero.com/)
-<li>[Start Bootstrap](http://startbootstrap.com/)
-<li>[Bootswatch](http://bootswatch.com/)
-<li>[Bootstrap Stage](http://www.bootstrapstage.com/)
+<li>{Wrap}bootstrap(https://wrapbootstrap.com/)
+<li>Bootstrap Zero(http://bootstrapzero.com/)
+<li>Start Bootstrap(http://startbootstrap.com/)
+<li>Bootswatch(http://bootswatch.com/)
+<li>Bootstrap Stage(http://www.bootstrapstage.com/)
 </ul>
  
 6. Quellenverzeichnis
