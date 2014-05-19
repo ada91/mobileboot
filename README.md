@@ -110,14 +110,15 @@ Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beid
 
 Bei Bootstrap erfolgt die Media-Abfrage in der CSS-Datei, welche später eingebunden wird. 
 
-@media (min-width: @screen-sm-min) { /* CSS-Regeln für die Geräte der Kategorie sm */ }
+	@media (min-width: @screen-sm-min) { /* CSS-Regeln für die Geräte der Kategorie sm */ }
 
 Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der einzelnen Klassen (Auf welche nachfolgend noch eingegangen wird) eingesetzt. Für jede Klasse existiert eine eigene Media Queries.  
 
 
-
 ii. Viewport
 ------------
+
+
 
 iii. Grid-System
 ----------------
@@ -170,9 +171,9 @@ Außerdem muss das Framework [JQuery][jq] in das Projekt eingebunden werden. Hier
  
 6. Quellenverzeichnis
 ---------------------
-Jendryschik, Michael [2010]: Allen recht, in: iX (2010) heise.de/-1058764 (15.05.2014)
+Jendryschik, Michael [2010]: Allen recht, in: iX (2010) http://heise.de/-1058764 (15.05.2014)
 
-Otto, Mark [2012]: Building Twitter Bootstrap, 2012, alistapart.com/article/building-twitter-bootstrap (16.05.2013)
+Otto, Mark [2012]: Building Twitter Bootstrap, 2012, http://alistapart.com/article/building-twitter-bootstrap (16.05.2013)
 
 selfhtml [2014]: CSS/Media Queries, 2014, http://wiki.selfhtml.org/wiki/CSS/Media_Queries (04.02.2014, 15.05.2014)
 
