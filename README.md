@@ -114,7 +114,7 @@ Nachfolgend wird Version eins verwendet.
 Die entsprechenden Dateien müssen im Anschluss im Header des HTML-Dokumentes über das Script- bzw. das Link-Tag eingebunden werden.
 
 Alternativ zum Download der Bootstrap-Dateien kann das Content Delivery Network (CDN) [MaxCDN][max] verwendet werden.
-[max] http://www.bootstrapcdn.com/
+[max]:http://www.bootstrapcdn.com/
 
 Dazu müssen statt den Verweisen auf die heruntergeladenen Dateien die entsprechenden Links von MaxCDN angegeben werden.
 
@@ -128,12 +128,37 @@ Dazu müssen statt den Verweisen auf die heruntergeladenen Dateien die entspreche
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 Eine weitere Möglichkeit zur "Installation" von Bootstrap ist die Verwendung des Packet-Managers [Bower][bow].
-[bow] https://github.com/bower/bower
+[bow]:https://github.com/bower/bower
 
 	$ bower install bootstrap
 
 Außerdem muss das Framework [JQuery][jq] in das Projekt eingebunden werden. Hierzu können die entsprechenden Dateien wiederum entweder heruntergeladen oder über ein CDN eingebunden werden.
-[jq] http://jquery.com/
+[jq]:http://jquery.com/
+
+Nachdem alle notwendigen Dateien heruntergeladen sind, kann die Programmierung einer Website mit Bootstrap vorgenommen werden. Das Grundgerüst sieht dabei wie folgt aus:
+
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Bootstrap</title>
+	
+	    <!-- Bootstrap CSS: Hier den richtigen Pfad bzw. eine CDN-Referenz angeben -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	  </head>
+	  <body>
+	    <h1>Hello, world!</h1>
+	
+	    <!-- jQuery (notwendig für die Bootstrap JavaScript-Plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	    <!-- Einbinden aller Bootstrap-Plugins -->
+	    <script src="js/bootstrap.min.js"></script>
+	  </body>
+	</html>
+
 
 5. Das Bootstrap-Ökosystem
 --------------------------
