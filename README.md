@@ -117,10 +117,10 @@ Nachteile der unterschiedlichen Varianten: In Variante eins kommen vermutlich in
 Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beide Dateien vom Endgerät geladen werden. 
 
 Bei Bootstrap erfolgt die Media-Abfrage in der CSS-Datei, welche später eingebunden wird. 
-	
-	```CSS
+
+```CSS
 	@media (min-width: @screen-sm-min) { /* CSS-Regeln für die Geräte der Kategorie sm */ }
-	```
+```
 	
 Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der einzelnen Klassen (Auf welche nachfolgend noch eingegangen wird) eingesetzt. Für jede Klasse existiert eine eigene Media Queries.  
 
