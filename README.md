@@ -91,15 +91,13 @@ Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an un
 
 * Einbinden unterschiedlicher Styledateien für unterschiedliche Medientypen: 
 	
-	<!-- Spezielle Style-Datei für Screen und Print -->
-	<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
-	<link rel="stylesheet" href="druck-stylesheet.css" media="print">  (selfhtml: CSS/Media Queries, 2014)
+	"<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print">"  (selfhtml: CSS/Media Queries, 2014)
 	
 * Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp: 
 	
-	<!-- Allgemeine Style-Datei und spezielle für Print -->
-	<link rel="stylesheet" href="stylesheet.css">
-	<link rel="stylesheet" href="druck-stylesheet.css" media="print"> (selfhtml: CSS/Media Queries, 2014)
+	"<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="druck-stylesheet.css" media="print">" (selfhtml: CSS/Media Queries, 2014)
 	
 * Alle CSS-Regeln werden in einem Stylesheet untergebracht:
 	
