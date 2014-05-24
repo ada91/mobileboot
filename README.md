@@ -94,14 +94,16 @@ Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an un
 	```HTML
 	<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print">  
-	``` (selfhtml: CSS/Media Queries, 2014)
+	``` 
+	(selfhtml: CSS/Media Queries, 2014)
 	
 * Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp: 
 
 	```HTML
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
-	``` (selfhtml: CSS/Media Queries, 2014)
+	``` 
+	(selfhtml: CSS/Media Queries, 2014)
 	
 * Alle CSS-Regeln werden in einem Stylesheet untergebracht:
 
@@ -115,9 +117,11 @@ Nachteile der unterschiedlichen Varianten: In Variante eins kommen vermutlich in
 Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beide Dateien vom Endgerät geladen werden. 
 
 Bei Bootstrap erfolgt die Media-Abfrage in der CSS-Datei, welche später eingebunden wird. 
-
+	
+	```CSS
 	@media (min-width: @screen-sm-min) { /* CSS-Regeln für die Geräte der Kategorie sm */ }
-
+	```
+	
 Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der einzelnen Klassen (Auf welche nachfolgend noch eingegangen wird) eingesetzt. Für jede Klasse existiert eine eigene Media Queries.  
 
 
