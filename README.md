@@ -142,6 +142,24 @@ http://viewportsizes.com
 
 iii. Grid-System
 ----------------
+Bootstrap nutzt ein Grid-System, also eine Kombination aus Zeilen und Spalten um das Seitenlayout zu erzeugen und den Inhalt zu strukturieren. 
+Dies wird insbesondere auch später für das responsive Verhalten wichtig. 
+Per Default (Die Less-Variable: @grid-columns:     12;)besteht dieses Grid bei Bootstrap aus 12 Spalten. 
+Diese sind mehr als gedankliche Spalten aufzufassen. Durch <div class=“row“> <\div> wird eine Zeile erzeugt. 
+Diese Zeile ist nun per Default (kann auch geändert werden) in 12 Spalten aufgeteilt. 
+Durch <div class=“col-md-1“>Hier steht Inhalt </div> 
+wird ein Feld für Inhalt in der Zeile erzeugt, das genau eine Spalte breit ist.
+Soll das Feld breiter sein so wird die Zahl erhöht.  
+<div class=“col-md-5“>Dieses Feld ist 5/12 breit.</div>.
+Möchte man einen Abstand zwischen zwei Inhaltsfelder erzeugen so wird zusätzlich ein Offset angegeben col-md-offset-3. Dieser erzeugt immer links des div-Elements einen Abstand über die entsprechend angegebene Anzahl von Zeilen. 
+Siehe hierzu die Tabelle der Geräteklassen unter: http://getbootstrap.com/css/#grid-options
+
+Die Geräteklass legt auch den sogenannten Breaking-Point fest, ab welcher die Spalten untereinander angeordnet werden. Dies geschieht wenn die angegebene minimale Breite der Klasse unterschritten wird. Existiert dann keine kleinere Klasse werden die Spalten untereinander über die gesamte Breite der Zeile angeordnet. 
+Durch die Geräteklassen können auch unterschiedliche Spaltenaufteilungen für unterschiedliche Geräte (Viewportbreiten) definiert werden. 
+Für ein Beispiel mit unterschiedlichen Spalteneinteilungen für unterschiedliche Geräteklassen siehe: 
+http://ada91.github.io/mobileboot/#/step-15. 
+Auf den, im angegebenen Link, fortfolgenden Seiten ist dargestellt wie sich das im Beispiel definierte Grid bei unterschiedlichen zur Verfügung stehenden Breiten verhält. 
+
 
 4. Entwickeln mit Bootstrap
 ---------------------------
