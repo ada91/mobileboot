@@ -130,7 +130,9 @@ ii. Viewport
 Um ein korrekte Darstellung der responsiven Seite auf mobilen Geräten sicherzustellen, sollte in der HTML Datei im <head>  
 Folgendes angegeben werden: 
 
+```HTML
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+```
 
 Dies sorgt dafür, dass sich die Seite beim Öffnen auch wirklich an die Breite des Gerätebildschirms anpasst. 
 Denn die mobilen Geräte versuchen beim Öffnen die Seiten in voller Breite anzuzeigen. 
