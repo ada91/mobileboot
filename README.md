@@ -158,7 +158,7 @@ Die Geräteklass legt auch den sogenannten Breaking-Point fest, ab welcher die Sp
 Durch die Geräteklassen können auch unterschiedliche Spaltenaufteilungen für unterschiedliche Geräte (Viewportbreiten) definiert werden. 
 Für ein Beispiel mit unterschiedlichen Spalteneinteilungen für unterschiedliche Geräteklassen siehe: 
 http://ada91.github.io/mobileboot/#/step-15. 
-Auf den, im angegebenen Link, fortfolgenden Seiten ist dargestellt wie sich das im Beispiel definierte Grid bei unterschiedlichen zur Verfügung stehenden Breiten verhält. 
+Auf den fortfolgenden Seiten, im angegebenen Link, ist dargestellt wie sich das im Beispiel definierte Grid bei unterschiedlichen zur Verfügung stehenden Breiten verhält. 
 
 
 4. Entwickeln mit Bootstrap
