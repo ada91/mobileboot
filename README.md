@@ -90,21 +90,27 @@ Medienmerkmale können untereinander sowie mit Medientypen durch den Operatur and
 Der Einsatz der Media Queries zum Aufrufen verschiedener Style-Sheets kann an unterschiedlichen Stellen geschehen:
 
 * Einbinden unterschiedlicher Styledateien für unterschiedliche Medientypen: 
+
 	```HTML
 	<link rel="stylesheet" href="bildschirm-stylesheet.css" media="screen">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print">  
 	``` (selfhtml: CSS/Media Queries, 2014)
+	
 * Einbinden einer allgemeinen Styledatei und Überschreiben durch Laden eine dedizierten Styledatei für einen speziellen Medientyp: 
+
 	```HTML
 	<link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="druck-stylesheet.css" media="print"> 
 	``` (selfhtml: CSS/Media Queries, 2014)
+	
 * Alle CSS-Regeln werden in einem Stylesheet untergebracht:
+
 	```CSS
 	/* CSS-Regeln für alle Ausgabegeräte */
 	@media only screen and (min-width: 775px) and (max-width: 1000px) {
 	/* CSS Regeln für die Ausgabe auf Bildschirmen welche eine Größe zwischen 775 und 1000 Pixeln aufweisen. */}
 	```
+	
 Nachteile der unterschiedlichen Varianten: In Variante eins kommen vermutlich in beiden Dateien zum Teil redundante Regeln vor, zudem müssen beide Dateien geladen werden. 
 Im zweiten Beispiel wird die Redundanzen vermieden, jedoch müssen auch hier beide Dateien vom Endgerät geladen werden. 
 
