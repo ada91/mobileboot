@@ -19,7 +19,7 @@ Agenda
 
 
 
-#1. Facts
+1. Facts
 --------
 Bootstrap ist ein auf HTML und CSS basierendes Framework zur Frontend Entwicklung von Webanwendungen. 
 Für die Generierung der CSS-Stylesheets nutzt Bootstrap LESS –- eine Sprache die CSS erweitert und durch einen Compiler in CSS-Code übersetzt wird. 
@@ -27,7 +27,7 @@ Das Framework wurde auf Github veröffentlicht und steht unter der  Apache Licens
 Der Grundgedanke hinter Bootstrap ist es das Design und die Entwicklung besser zu verknüpfen: „pairing designers with developers“(Otto, M.: Building Twitter Bootstrap, 2012)
 
 
-#2. Geschichte
+2. Geschichte
 -------------
 Bootstrap entstand aus einem internen Projekt bei Twitter. 
 Ziel des Projektes war es, einen einheitlichen Standard für die Frontend Entwicklung zur Verfügung zu stellen. 
@@ -48,7 +48,7 @@ Mit der Version 2 wurden optional Optimierungen für Mobilgeräte ergänzt.
 Die Version 3 wurde von Grund auf überarbeitet, um anstatt lediglich mobile Styles zu ergänzen, diese direkt im Kern des Layouts, von Anfang an, zu berücksichtigen. 
 Kernstück der Unterstützung mobiler Geräte stellt das responsive Design dar.  
 
-#3. Responsive Webdesign
+3. Responsive Webdesign
 ------------------------
 
 Die sich mit Anbahnung des Internet of Things immer weiter diversifizierende Systemlandschaft stellt eine zunehmende Herausforderung für die Entwickler von Webinhalten dar. 
@@ -62,7 +62,7 @@ Es wird lediglich eine Website erstellt, welche sich durch Änderung des zur Verf
 
 Um dies umzusetzen müssen Displaygröße und ähnliche Parameter wie beispielsweise zur Verfügung stehende Eingabegeräte abgefragt und entsprechend darauf reagiert werden.
 
-##i. Media Queries
+i. Media Queries
 ----------------
 Um entsprechend auf die Bildschirmbreite der Geräte reagieren zu können werden sogenannte Media Queries eingesetzt. Diese kennen Medientypen und Medienmerkmalen. 
 Treffen die entsprechenden abgefragten Medientypen, Merkmale oder eine Kombination aus beiden zu, so werden entsprechend spezielle CSS-Regeln angewandt. 
@@ -125,7 +125,7 @@ Bei Bootstrap erfolgt die Media-Abfrage in der CSS-Datei, welche später eingebun
 Auf Basis von Less werden an dieser Stelle Variablen für die Pixelbreite der einzelnen Klassen (Auf welche nachfolgend noch eingegangen wird) eingesetzt. Für jede Klasse existiert eine eigene Media Queries.  
 
 
-##ii. Viewport
+ii. Viewport
 ------------
 Um ein korrekte Darstellung der responsiven Seite auf mobilen Geräten sicherzustellen, sollte in der HTML Datei im <head>  
 Folgendes angegeben werden: 
@@ -148,7 +148,7 @@ http://viewportsizes.com
 
 
 
-##iii. Grid-System
+iii. Grid-System
 ----------------
 Bootstrap nutzt ein Grid-System, also eine Kombination aus Zeilen und Spalten um das Seitenlayout zu erzeugen und den Inhalt zu strukturieren. 
 Dies wird insbesondere auch später für das responsive Verhalten wichtig. 
@@ -169,7 +169,7 @@ http://ada91.github.io/mobileboot/#/step-15.
 Auf den fortfolgenden Seiten, im angegebenen Link, ist dargestellt wie sich das im Beispiel definierte Grid bei unterschiedlichen zur Verfügung stehenden Breiten verhält. 
 
 
-#4. Entwickeln mit Bootstrap
+4. Entwickeln mit Bootstrap
 ---------------------------
 In diesem Abschnitt wird erläutert, wie man mit dem Bootstrap-Framework entwickeln kann. 
 
@@ -238,7 +238,7 @@ Nachdem alle notwendigen Dateien heruntergeladen sind, kann die Programmierung e
 Nachdem das Grundgerüst innerhalb der HTML-Seite erstellt ist, können nun die durch Bootstrap bereitgestellten Elemente und JavaScript-Plugins innerhalb des oben vorgestellten responsiven Designs verwendet werden.
 Weitere Informationen finden sich auf http://getbootstrap.com.
 
-#5. Das Bootstrap-Ökosystem
+5. Das Bootstrap-Ökosystem
 --------------------------
 Neben dem eigentlichen Bootstrap-Framework haben sich viele Projekte entwickelt, die für die Entwicklung genutzt werden können, um einfacher Websites mit Bootstrap zu erstellen.
 Nachfolgend sind einige Beispiele aufgelistet:
@@ -259,7 +259,7 @@ Bootstrap Themes und Templates
 <li>Bootstrap Stage(http://www.bootstrapstage.com/)
 </ul>
  
-#6. Quellenverzeichnis
+6. Quellenverzeichnis
 ---------------------
 Jendryschik, Michael [2010]: Allen recht, in: iX (2010) http://heise.de/-1058764 (15.05.2014)
 
